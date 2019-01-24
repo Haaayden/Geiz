@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NewsCardCommon extends StatelessWidget {
+class LabsCard extends StatelessWidget {
   @override
     Widget build(BuildContext context) {
       return Container(
         height: 100.0,
-        color: Colors.blueGrey,
+        color: Colors.teal,
         child: Center(
-          child: Text('NewsCardCommon'),
+          child: Text('LabsCard'),
         ),
       );
     }
