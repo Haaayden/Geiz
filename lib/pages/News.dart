@@ -77,7 +77,7 @@ class _NewsState extends State {
         itemBuilder: (BuildContext context, int index) {
           if (index == 0) {
             // 第一个展示Banner
-            return TopBannerWidget.TopBanner();
+            return TopBannerWidget.topBanner(context, banners);
           } else if (index < dataList.length + 1) {
             // 展示Card
             return SelectCardType.selectType(context, dataList[index - 1]);
