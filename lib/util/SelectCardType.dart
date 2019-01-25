@@ -17,7 +17,7 @@ class SelectCardType {
       } else if (data.type == 1) {
         widget = newsCardCommon(context, data);
       } else if (data.type == 2) {
-        widget = newsCardLargeImg(context, data);
+        widget = NewsCardLargeImg(data);
       }
     } else {
       widget = ColumnHorizontal();
