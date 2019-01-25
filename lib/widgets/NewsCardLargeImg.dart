@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
+import '../model/feed.dart';
 
-class NewsCardLargeImg extends StatelessWidget {
-  @override
-    Widget build(BuildContext context) {
-      return Container(
-        height: 100.0,
-        color: Colors.grey,
-        child: Center(
-          child: Text('NewsCardLargeImg'),
-        ),
-      );
-    }
+Widget newsCardLargeImg(BuildContext context, Feed feed) {
+  return Container(
+    height: 100.0,
+    color: Colors.grey,
+    child: Center(
+      child: Text('NewsCardLargeImg'),
+    ),
+  );
 }

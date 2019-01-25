@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
+import '../model/feed.dart';
 
-class NewsCardTopLine extends StatelessWidget {
-  @override
-    Widget build(BuildContext context) {
-      return Container(
-        height: 100.0,
-        color: Colors.blueGrey,
-        child: Center(
-          child: Text('NewsCardTopLine'),
-        ),
-      );
-    }
+Widget newsCardTopLine(BuildContext context, Feed feed) {
+  return Container(
+    height: 100.0,
+    color: Colors.blueGrey,
+    child: Center(
+      child: Text('NewsCardTopLine'),
+    ),
+  );
 }

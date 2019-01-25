@@ -11,13 +11,13 @@ class SelectCardType {
     Widget widget;
     if (data.runtimeType == Feed) {
       if (data.indexType != null) {
-        widget = NewsCardTopLine();
+        widget = newsCardTopLine(context, data);
       } else if (data.type == 0) {
-        widget = LabsCard();
+        widget = labsCard(context, data);
       } else if (data.type == 1) {
-        widget = NewsCardCommon();
+        widget = newsCardCommon(context, data);
       } else if (data.type == 2) {
-        widget = NewsCardLargeImg();
+        widget = newsCardLargeImg(context, data);
       }
     } else {
       widget = ColumnHorizontal();
